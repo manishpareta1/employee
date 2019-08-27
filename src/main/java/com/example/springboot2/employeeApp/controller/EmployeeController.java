@@ -69,13 +69,17 @@ public class EmployeeController implements java.io.Serializable{
 	        CountryDetail country = new CountryDetail(employeeDetails.getAddress().getCountry().getCity(),
 	        		employeeDetails.getAddress().getCountry().getState(),
 	        		employeeDetails.getAddress().getCountry().getCountry());
+	        country.setId(employeeDetails.getAddress().getCountry().getId());
 	        Address address = new Address(employeeDetails.getAddress().getAddressLine1(),
 	        		employeeDetails.getAddress().getAddressLine2(), country);
+	        address.setId(employeeDetails.getAddress().getId());
 	        employee.setEmailId(employeeDetails.getEmailId());
 	        employee.setLastName(employeeDetails.getLastName());
 	        employee.setFirstName(employeeDetails.getFirstName());
 	        employee.setAddress(address);
-	        final Employee updatedEmployee = employeeRepository.save(employee);
+	        //Defect - new row getting created for address and country table in DB if there is change in address obj 
+	        //changed method from save() to saveAndFlush() - 
+	        final Employee updatedEmployee = employeeRepository.saveAndFlush(employee);
 	        return ResponseEntity.ok(updatedEmployee);
 	    }
 
