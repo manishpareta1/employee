@@ -39,6 +39,7 @@ public class EmployeeController implements java.io.Serializable{
 	
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
+		System.out.println("trying to pull emp list");
 		return employeeRepository.findAll();
 	}
 	
@@ -57,7 +58,7 @@ public class EmployeeController implements java.io.Serializable{
 	 @PostMapping("/employees")
 	    public Employee createEmployee(@Valid @RequestBody Employee employee) {
 		 System.out.println("Received Employee Details: " + employee.toString());
-		 employee.setId(0);
+		 //employee.setId(0);
 	        return employeeRepository.save(employee);
 	    }
 	 
@@ -69,6 +70,7 @@ public class EmployeeController implements java.io.Serializable{
 	        CountryDetail country = new CountryDetail(employeeDetails.getAddress().getCountry().getCity(),
 	        		employeeDetails.getAddress().getCountry().getState(),
 	        		employeeDetails.getAddress().getCountry().getCountry());
+	        
 	        country.setId(employeeDetails.getAddress().getCountry().getId());
 	        Address address = new Address(employeeDetails.getAddress().getAddressLine1(),
 	        		employeeDetails.getAddress().getAddressLine2(), country);
