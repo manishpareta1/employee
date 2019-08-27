@@ -6,6 +6,8 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -33,13 +35,15 @@ public class EmployeeController implements java.io.Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	private static final Logger logger = LoggerFactory.getLogger(EmployeeController.class);
+	
 	
 	@Autowired
 	public EmployeeRepository employeeRepository;
 	
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
-		System.out.println("trying to pull emp list");
+		logger.debug("making call to repo method to get Employee List from DB");
 		return employeeRepository.findAll();
 	}
 	

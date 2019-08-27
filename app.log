@@ -1,0 +1,69 @@
+2019-08-27 17:56:08,759 INFO com.example.springboot2.employeeApp.Springboot2JpaCrudEmployeeAppApplicationTests [main] No active profile set, falling back to default profiles: default
+ 2019-08-27 17:56:11,343 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+ 2019-08-27 17:56:11,712 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+ 2019-08-27 17:56:11,871 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+ 2019-08-27 17:56:12,008 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+ 2019-08-27 17:56:12,012 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+ 2019-08-27 17:56:12,284 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+ 2019-08-27 17:56:12,737 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+ 2019-08-27 17:56:15,061 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+ 2019-08-27 17:56:15,061 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2019-08-27 17:56:15,072 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+ 2019-08-27 17:56:15,073 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2019-08-27 17:56:18,093 INFO com.example.springboot2.employeeApp.Springboot2JpaCrudEmployeeAppApplicationTests [main] Started Springboot2JpaCrudEmployeeAppApplicationTests in 11.71 seconds (JVM running for 13.053)
+ 2019-08-27 17:56:18,384 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+ 2019-08-27 17:56:18,403 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+ 2019-08-27 17:56:41,147 INFO com.example.springboot2.employeeApp.Springboot2JpaCrudEmployeeAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+ 2019-08-27 17:56:43,873 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+ 2019-08-27 17:56:43,875 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.22]
+ 2019-08-27 17:56:44,093 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/employeespringbootapi] [restartedMain] Initializing Spring embedded WebApplicationContext
+ 2019-08-27 17:56:44,444 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+ 2019-08-27 17:56:44,704 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+ 2019-08-27 17:56:44,793 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+ 2019-08-27 17:56:44,929 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+ 2019-08-27 17:56:44,933 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+ 2019-08-27 17:56:45,161 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+ 2019-08-27 17:56:45,367 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+ 2019-08-27 17:56:46,908 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+ 2019-08-27 17:56:46,909 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2019-08-27 17:56:46,918 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+ 2019-08-27 17:56:46,918 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2019-08-27 17:56:48,931 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+ 2019-08-27 17:56:49,441 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+ 2019-08-27 17:56:49,442 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+ 2019-08-27 17:56:49,711 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+ 2019-08-27 17:56:49,711 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+ 2019-08-27 17:56:49,976 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+ 2019-08-27 17:56:50,332 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+ 2019-08-27 17:56:50,333 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+ 2019-08-27 17:56:50,333 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+ 2019-08-27 17:56:50,334 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+ 2019-08-27 17:56:50,334 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+ 2019-08-27 17:56:50,334 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+ 2019-08-27 17:56:50,334 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+ 2019-08-27 17:56:50,514 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+ 2019-08-27 17:56:50,516 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+ 2019-08-27 17:56:50,520 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+ 2019-08-27 17:56:50,527 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1566908810524 with initial instances count: 0
+ 2019-08-27 17:56:50,532 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1566908810532, current=UP, previous=STARTING]
+ 2019-08-27 17:56:50,549 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMPLOYEEAPI/MANISH-TI11265.in.corp.tavant.com:employeeApi: registering service...
+ 2019-08-27 17:56:50,610 INFO com.example.springboot2.employeeApp.Springboot2JpaCrudEmployeeAppApplication [restartedMain] Started Springboot2JpaCrudEmployeeAppApplication in 11.606 seconds (JVM running for 12.593)
+ 2019-08-27 17:56:50,678 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMPLOYEEAPI/MANISH-TI11265.in.corp.tavant.com:employeeApi - registration status: 204
+ 2019-08-27 17:57:20,516 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+ 2019-08-27 17:57:20,518 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+ 2019-08-27 17:57:20,519 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+ 2019-08-27 17:57:20,519 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+ 2019-08-27 17:57:20,520 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+ 2019-08-27 17:57:20,520 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+ 2019-08-27 17:57:20,520 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+ 2019-08-27 17:57:20,614 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+ 2019-08-27 17:57:45,534 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/employeespringbootapi] [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2019-08-27 17:57:45,635 DEBUG com.example.springboot2.employeeApp.controller.EmployeeController [http-nio-8080-exec-10] making call to repo method to get Employee List from DB
+ 2019-08-27 17:57:45,744 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-10] HHH000397: Using ASTQueryTranslatorFactory
+ 2019-08-27 18:01:50,336 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+ 2019-08-27 18:06:50,333 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+ 
